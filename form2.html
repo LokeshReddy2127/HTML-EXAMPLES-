@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #efdcdc;
+            font-family: Georgia, serif;
+        }
+
+        .container {
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            border-spacing: 10px 15px;
+        }
+
+        td {
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 240px;
+            height: 25px;
+        }
+
+        textarea {
+            width: 240px;
+            height: 80px;
+        }
+
+        select {
+            width: 245px;
+            height: 30px;
+        }
+
+        .small {
+            width: 60px !important;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        button {
+            padding: 5px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td>Roll no. :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Student name :</td>
+                <td>
+                    <input type="text" placeholder="First Name">
+                    -
+                    <input type="text" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Father's name :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Date of birth :</td>
+                <td>
+                    <input type="text" class="small" placeholder="Day">
+                    -
+                    <input type="text" class="small" placeholder="Month">
+                    -
+                    <input type="text" class="small" placeholder="Year">
+                    <i>(DD-MM-YYYY)</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile no. :</td>
+                <td>
+                    <input type="text" style="width:40px;" value="+91">
+                    -
+                    <input type="text" style="width:200px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email id :</td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+                <td><input type="password"></td>
+            </tr>
+
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department :</td>
+                <td>
+                    <input type="checkbox"> CSE
+                    <input type="checkbox"> IT
+                    <input type="checkbox"> ECE
+                    <input type="checkbox"> Civil
+                    <input type="checkbox"> Mech
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course :</td>
+                <td>
+                    <select>
+                        <option>---------------- Select Current Course ----------------</option>
+                        <option>B.Tech</option>
+                        <option>BCA</option>
+                        <option>B.Sc</option>
+                        <option>MCA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student photo :</td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td>City :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Address :</td>
+                <td><textarea></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="btn">
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
